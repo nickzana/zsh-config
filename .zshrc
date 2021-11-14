@@ -15,6 +15,8 @@ autoload -U compinit; compinit
 _comp_options+=(globaldots) # enable hidden files
 source $ZDOTDIR/completion.zsh
 source $ZDOTDIR/prompt.zsh
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/fzf/shell/key-bindings.zsh
 
 alias vim=nvim
 alias vi=nvim
