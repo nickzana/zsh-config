@@ -8,9 +8,14 @@ export SAVEHIST=100
 export HIST_SAVE_NO_DUPS
 export EDITOR="nvim"
 export VISUAL="nvim"
-export QUBES_GPG_DOMAIN=dev-gpg
-export PATH=$PATH:/home/user/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/
-. "$HOME/.cargo/env"
+
+if [ -d "$HOME/.rustup" ]; then
+	PATH=$PATH:/home/user/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/
+fi
+
+if [ -d "$HOMV/cargo" ]; then
+	. "$HOME/.cargo/env"
+fi
 
 # User specific environment
 if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
