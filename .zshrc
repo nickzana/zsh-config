@@ -20,3 +20,5 @@ source /usr/share/fzf/shell/key-bindings.zsh
 
 alias vim=nvim
 alias vi=nvim
+
+alias ls=exa
