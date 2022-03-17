@@ -18,7 +18,7 @@ source $ZDOTDIR/prompt.zsh
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/fzf/shell/key-bindings.zsh
 
-alias vim=nvim
-alias vi=nvim
+alias vim=kak
+alias vi=kak
 
 alias ls=exa
