@@ -6,8 +6,8 @@ export HISTFILE="$ZDOTDIR/.zhistory"
 export HISTSIZE=1000
 export SAVEHIST=100
 export HIST_SAVE_NO_DUPS
-export EDITOR="kak"
-export VISUAL="kak"
+export EDITOR="nvim"
+export VISUAL="nvim"
 
 if [ -d "$HOME/.rustup" ]; then
 	PATH=$PATH:/home/user/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/
